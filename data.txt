@@ -1,0 +1,16 @@
+70(traning)-30(prediction)
+
+closing price of a particular day (Closing Price vs Time Chart)
+
+moving avg: avg of previous 100days closing price to get a value and plot to graph
+{hence not plotted immediately}
+
+technical analyst follow: if 100MA above 200MA -> uptrend and vice-versa (Closing Price vs Time Chart with IOOdays MA & 200MA)
+
+offset: difference between original and predicted price
+
+LSTM model
+
+we are doing time series analysis hence : mean_squared error
+
+stack lstm deep learning model
