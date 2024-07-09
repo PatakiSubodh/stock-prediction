@@ -30,8 +30,17 @@ fig = plt.figure(figsize=(12, 6))
 plt.plot(df.index, df['Close'], label='Close')
 st.pyplot(fig)
 
-st.subheader('Closing Price vs Time Chart with 100MA & 200MA')
+# price vs 100
+st.subheader('Closing Price vs Time Chart with 100MA')
 ma100 = df['Close'].rolling(100).mean()
+fig = plt.figure(figsize=(12, 6))
+plt.plot(df.index, ma100, 'r', label='100MA')
+plt.plot(df.index, df['Close'], 'b', label='Close')
+plt.legend()
+st.pyplot(fig)
+
+# price vs 100 and 200
+st.subheader('Closing Price vs Time Chart with 100MA & 200MA')
 ma200 = df['Close'].rolling(200).mean()
 fig = plt.figure(figsize=(12, 6))
 plt.plot(df.index, ma100, 'r', label='100MA')
